@@ -14,3 +14,30 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.nameInput{
+  margin: 20px;
+}
+
+.containerEmoji{
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+   transform: rotateZ(0deg);
+  }
+  100% {
+   transform: rotateZ(360deg);
+  }
+ }
+
+.appMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.5rem black solid;
+  border-radius: 2em;
+  background-color: rgb(255, 135, 135);
+}
