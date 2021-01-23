@@ -8,7 +8,7 @@ export default function Home() {
   const [nome, setNome] = useState()
   const[emoji, setEmoji] = useState(":heart:")
   const responseData = async function(){
-   const res = await axios.get("http://localhost:3000/api/hello")
+   const res = await axios.get("https://hello-world-next-js.vercel.app/api/hello")
    setNome(res.data.name)
   }
   const trocaEmoji = function(){
@@ -36,7 +36,6 @@ export default function Home() {
         Tudo bom?
       </h2>
       <Emoji className="emoji" text={emoji} onlyEmojiClassName="make-emojis-large" />
-      <h3>Meu nome é {responseData(), nome}</h3>
       <button onClick={trocaEmoji}>Clique aqui</button>
     </div>
   )
