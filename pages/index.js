@@ -36,6 +36,7 @@ export default function Home() {
         Tudo bom?
       </h2>
       <Emoji className="emoji" text={emoji} onlyEmojiClassName="make-emojis-large" />
+      <p></p>
       <button onClick={trocaEmoji}>Clique aqui</button>
     </div>
   )
